@@ -30,7 +30,7 @@ jobs:
     - name: Build
       run: |
         npm install
-        npm script Deploy
+        npm run-script Deploy
         
     - name: Deploy
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
