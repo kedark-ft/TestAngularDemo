@@ -12,7 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     strategy:
       matrix:
@@ -37,7 +37,7 @@ jobs:
       with:
         server: 192.168.1.119
         username: riscaidev
-        password: ${{ secrets.ftp_password }}
+        password: ${{ secrets.FTP_PASSWORD }}
         # prtocall: ftps
         # port: 2122
         local-dir: ./Release/
