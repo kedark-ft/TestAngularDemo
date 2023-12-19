@@ -30,6 +30,7 @@ jobs:
     - name: Build
       run: |
         npm install
+        npm install -g @angular/cli
         npm run build
         
     - name: Deploy
@@ -39,7 +40,7 @@ jobs:
         username: riscaidev
         password: ${{ secrets.FTP_PASSWORD }}
         # prtocall: ftps
-        # port: 2122
+        port: 2122
         local-dir: ./Release/
-        server-dir: deploy/
+        server-dir: deploy/angular/
         timeout: 60000000
