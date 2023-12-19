@@ -41,6 +41,6 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         # prtocall: ftps
         port: 2122
-        local-dir: ./Release/
+        local-dir: ./dist/
         server-dir: deploy/angular/
         timeout: 60000000
