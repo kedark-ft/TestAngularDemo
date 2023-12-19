@@ -12,7 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: self-hosted angular-runner
+    runs-on: angular-runner
 
     strategy:
       matrix:
