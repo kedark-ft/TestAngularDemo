@@ -25,3 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Status of the SonarQube
+
+SonarQube status
+
+[![Quality Gate Status](http://localhost:9000/api/project_badges/measure?project=AngularDemo&metric=alert_status&token=sqb_456a1c8e7479b7cb70f1ca7cba1cd8cc763c3603)](http://localhost:9000/dashboard?id=AngularDemo)
