@@ -34,11 +34,6 @@ jobs:
         npm run build
         npm install sonar-scanner
         npm run sonar
-        sonar-scanner \
-          -Dsonar.projectKey=Angular-Development-Demo \
-          -Dsonar.sources=. \
-          -Dsonar.host.url={{ secrets.SONAR_HOST_URL }} \
-          -Dsonar.token=${{ secrets.SONAR_DEVEOPMENT_TOKEN }}
       
     - name: Deploy
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
