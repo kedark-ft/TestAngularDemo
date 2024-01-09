@@ -32,8 +32,10 @@ jobs:
         npm install
         npm install -g @angular/cli
         npm run build
-        npm install sonar-scanner
-        npm run sonar
+        npm run sonar-scanner
+
+      env:
+        SONAR_TOKEN: $${{development.SONAR_TOKEN}}
       
     - name: Deploy
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
